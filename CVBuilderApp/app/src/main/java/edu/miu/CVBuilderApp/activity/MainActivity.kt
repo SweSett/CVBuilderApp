@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), WorkDialogCommunicator {
         binding.pager.adapter = adapter
     }
 
-    override fun onAddWork(work: Work) {
+    override fun onAddWOrk(work: Work) {
         if (::adapter.isInitialized) {
             adapter.addWork(work)
         } else {
