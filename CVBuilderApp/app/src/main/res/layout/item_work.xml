@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/horizontal_margin_8"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/rv_work_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rv_work_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/code_works"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rv_work_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/implementation_consultant"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rv_work_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2022_present"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
