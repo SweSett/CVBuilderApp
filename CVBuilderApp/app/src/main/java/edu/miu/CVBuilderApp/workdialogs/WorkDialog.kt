@@ -31,7 +31,7 @@ class WorkDialog : DialogFragment() {
                     val position = view.findViewById<EditText>(R.id.et_dialog_position).text.toString().trim()
                     val duration = view.findViewById<EditText>(R.id.et_dialog_duration).text.toString().trim()
                     validate(title, position, duration)
-                    communicator.onAddWOrk(Work(title, position, duration, R.drawable.ic_work_placeholder))
+                    communicator.onAddWork(Work(title, position, duration, R.drawable.ic_work_placeholder))
                     dismiss()
                 }
 
@@ -57,7 +57,6 @@ class WorkDialog : DialogFragment() {
             return
         }
     }
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         communicator = context as WorkDialogCommunicator
